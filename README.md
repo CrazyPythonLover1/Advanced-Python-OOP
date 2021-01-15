@@ -14,7 +14,7 @@ Complete python Developer 2020 Zero to Mastery
 > User just use it. 
 
 3. INHERITANCE 
-> We can inherit the class in any class.
+> We can inherit the class in any child class.
 
 ```python
 class User:
