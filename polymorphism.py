@@ -1,9 +1,12 @@
-# Inheritance
+# Polymorphism
 
 class User:
   def sign_in(self):
     print("Logged in")
     return
+  
+  def attack(self):
+    print("do nothing")
 
 class Wizard(User): # pass the parrent class
   def __init__(self, name, power):
@@ -11,6 +14,7 @@ class Wizard(User): # pass the parrent class
     self.power = power
 
   def attack(self):
+    User.attack(self) # User attack method
     print(f'attacking with power of {self.power}')
 
 class Archer(User):
@@ -23,7 +27,13 @@ class Archer(User):
 
 wizard1 = Wizard('Merlin', 50)
 archer1 = Archer('Robin', 500)
-
 wizard1.attack()
-archer1.attack()
-archer1.sign_in()
+
+def player_attack(char):
+    char.attack()
+
+player_attack(wizard1)
+player_attack(archer1)
+
+for char in [wizard1, archer1]:
+    char.attack()

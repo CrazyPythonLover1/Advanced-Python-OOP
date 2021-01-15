@@ -14,6 +14,26 @@ Complete python Developer 2020 Zero to Mastery
 > User just use it 
 
 3. INHERITANCE 
-> We can inherit the class in any class 
+> We can inherit the class in any class
 
-4. 
+```python
+class User:
+  def sign_in(self):
+    print("Logged in")
+    return
+
+class Wizard(User): # pass the parrent class
+  pass
+
+wizard2 = Wizard()
+wizard2.sign_in()
+
+# Here, we can use method of User class in Wizard class. That's call Inheritance in programming. 
+```
+
+
+4. POLYMORPHISM
+> Poly means many and Morphisom means forms...many forms
+> Polymorphism allows us to have many forms
+> It has ability to redifine methods for the derived classes
+
