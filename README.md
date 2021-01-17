@@ -28,7 +28,8 @@ class Wizard(User): # pass the parrent class
 wizard2 = Wizard()
 wizard2.sign_in()
 
-# Here, we can use method of User class in Wizard class. That's call Inheritance in programming. 
+# Here, we can use method of User class in Wizard class.
+# That's call Inheritance in programming. 
 ```
 
 
